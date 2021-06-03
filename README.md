@@ -4,6 +4,36 @@
 
 https://wbbny.m.jd.com/babelDiy/Zeus/2s7hhSTbhMgxpGoa9JDnbDzJTaBB/index.html#/home
 
+## 最新使用办法
+- 克隆项目
+
+```
+git clone https://github.com/we11cheng/jd_wbbny.git
+```
+- 安装依赖，依次执行，提示缺啥模块就安装即可
+
+比如提示没有psutil模块，`pip3 install psutil`安装即可
+
+```
+Traceback (most recent call last):
+  File "/Users/igwc/jd_wbbny/get_jdcookie.py", line 37, in <module>
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+```
+
+可能需要安装的依赖
+
+```
+pip3 install psutil
+pip3 install requests
+pip3 install rsa
+pip3 install qrcode
+pip3 install Image
+```
+- 运行` python3 get_jdcookie.py`京东扫码登陆
+- 运行`python3 jd.py` 等待任务完成即可
+
+
 **2021-06-02更新：<br>
 1、删除京东星推官<br>
 2、更新脚本，修复火爆问题**
@@ -53,4 +83,5 @@ jdapp;iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like G
 4.登录后，点击network，然后活动中的任务列表，在network中找到那个请求的接口，把Headers 中的Cookie复制出来，直接document出来的貌似失败
 <img src='https://image.planet.youku.com/img/100/28/62238/i_1490875862238_05ef0bdf914bc70a89cdde3876324780_b_w1188h1057_face_w1188h1057_x0y0w0h0c0.png'>
 
-更多活动资讯请关注：https://www.yqhd8.com
+更多活动关注微信公众号
+![](https://gitee.com/he11oworld/picBed/raw/master/WechatIMG653.png)
